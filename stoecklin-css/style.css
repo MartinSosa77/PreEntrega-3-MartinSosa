@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+
+    font-family: Roboto Condensed;
+
+
+    
+    
+   
+
+}
+
+/* CLASE GENERAL */
+
+.t_center{
+
+    text-align: center;
+}
+
+#div_padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header"
+                       "main"
+                        "footer";
+
+}
+/* HEADER MOBILE FIRST */
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+.navbar{
+    background-color: #333;
+}
+.ul_navbar{
+    display: flex;
+  flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+}
+
+.a_navbar{
+    text-decoration: none;
+    color: azure;
+}
+  li{
+   list-style: none;
+    padding: 10px;
+  }
+  .section_noticias{
+    margin-top: 20px;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-items: auto;
+    justify-content: center;
+    border: solid 2px;
+    margin-top: 10px;
+    text-align: center;
+
+    
+     }
+     .pie_articulo{
+        width: 350px;
+     }
+    
+   .liga_participando{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+  
+}
+article:hover{
+    border-style: solid;
+    border-color:yellow;
+   }
+  h2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+  }
+.d_flex{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+      
+   
+  }
+  footer{
+    background-color: #333;
+   padding: 15px;
+  }
+ 
