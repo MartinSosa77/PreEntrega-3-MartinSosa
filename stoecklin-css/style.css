@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: Roboto Condensed;
 }
 
@@ -16,7 +15,10 @@
   overflow: auto;
 
 }
-
+.row{
+  width: 100%;
+  margin-right: 80px;
+}
 
 @media (max-width: 768px) {
   .collapsed{
@@ -24,22 +26,71 @@
   }
 
 .navbar-toggler{
-  width: 500px;
-  max-width: max-content;} 
+  width: 400px;
+ 
+  } 
 
   .navbar .navbar-collapse{
  text-align: center;
 
-     
+    
      
   }
+  
   .navbar-collapse .navbar-nav{
  
     text-align: center;
 
-    
   
   }
+  
+  .div-proyecto-hijo{
+    border: solid 2px #f9e904;
+    padding: 5px;
+    margin: 5px;}
+}
+
+
+  @media (max-width: 576px) {
+    .collapsed{
+     text-align: center;
+    }
+    .div-proyecto-hijo{
+      border: solid 2px #f9e904;
+      padding: 5px;
+      margin: 5px;}
+
+  .navbar-toggler{
+    width: 400px;
+   
+    } 
+  
+    .navbar .navbar-collapse{
+   text-align: center;
+  
+      
+       
+    }
+   
+    .navbar-collapse .navbar-nav{
+   
+      text-align: center;
+  
+      
+    
+    }
+    .div-logo{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    footer{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
  
 }
 
@@ -128,8 +179,17 @@ display: block;
 padding-top: 10px;
 color: white;
 }
+.p-historia{
+  margin-top: 500px
+}
 li{
   font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+}
+a{
+  list-style: none;
 }
 
 
@@ -144,26 +204,16 @@ div h3{
   .logo{
     margin-left: 150px;
    }
-   .dropdown-menu{
-    margin-left: 280px;
-   }
  
- .nav-link { padding-left: 50px;
- }
- .nav-link{
-  width: 100%;
-  margin-left: 280px;
-}
-.nav-item{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+ 
+ 
+
+
 
 }
 .collapse{
   background-color: #242423;
+ text-align: center;
 
 }
 .navbar{
@@ -202,10 +252,7 @@ section{
   }
 
 
-  header{
-    width:  100vw;
-    background-color: black;
-  }
+  
   
 
 .div-pie-articulo{
@@ -248,7 +295,9 @@ margin-right: 60px;
 .fixed-bottom{
  display: flex;
  flex-direction: row-reverse;
- margin: 30px 50px;
+ margin-bottom: 30px;
+ margin-right: 30px;
+
 
  }
  .fixed-icon{
@@ -273,7 +322,7 @@ margin-right: 60px;
 
 .div-proyecto{
 
-margin: 15px;
+
  
 
 }
@@ -298,20 +347,9 @@ margin: 30px;
  .sedes-tittle{
   background-color: #f9e904;
  }
+ .mapa{
+  justify-content: center;
+  align-items: center;
+ }
 
 /*   TABLET    */
-
-
-
-
-
-
-
- 
- 
-
-  
-
-  
-    
-  
