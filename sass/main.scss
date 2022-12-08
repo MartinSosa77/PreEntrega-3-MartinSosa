@@ -2,6 +2,8 @@
 @use  "./partials/_proyecto.scss";
 @use  "./partials/_historia.scss";
 @use "./partials/_variables.scss";
+@use "./partials/_registro.scss";
+@use "./partials/_paneldesocios.scss";
 
 * {
     margin: 0;
@@ -22,8 +24,18 @@
     margin-right: 80px;
   }
   @media (max-width: 768px) {
+
+    .div-logo{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
     .collapsed{
      text-align: center;
+    }
+    .display_mobile {
+      display: none;
     }
   
   .navbar-toggler{
@@ -84,7 +96,6 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
         align-items: center;
       }
       footer{
@@ -94,7 +105,18 @@
       }
    
   }
-  
+  @media (max-width: 991px) {
+    .div-logo{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    .display_mobile{
+      display: none;
+    }
+   
+  }
   .subtittle{
     margin-top:50px;
     background-color:variables.$color-secondary;
@@ -217,27 +239,22 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: all 0.3s ease-in-out;
+      a:before{
+        content: '';
+        background:#f9e904;
+        display: inline;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
          }
+        }
+
+
     
-    a:before{
-      content: '';
-      background:#f9e904;
-      display: block;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 3px;
-      transition: all 0.3s ease-in-out;
-    }
-    
-    a:hover {
-     background-position: 0;
-    }
-    
-    a:hover::before{
-      width: 100%;
-    }
+  
     
     
    
@@ -258,14 +275,9 @@
         }
          
   
-  @media (min-width: 768px) {
-  
-    .logo{
-      margin-left: 150px;
-     }
-   
 
-  }
+
+  
   .collapse{
     background-color:variables.$color-primary;
    text-align: center;
@@ -281,6 +293,7 @@
       max-width: 544px;
       min-width: 300px;
       margin-bottom: 20px;
+      margin-top: 20px;
      
 
     }
@@ -384,9 +397,8 @@
     margin: 15px;
     display: flex;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
     box-shadow: rgba(255, 251, 2, 0.966) 0px 5px 15px;
+  
       
   }
 
@@ -407,8 +419,7 @@
     font-size: 1.4em;
    }
    }
-   
-.social-link {
+   .social-link {
     width: 30px;
     height: 30px;
     border: 1px solid #ddd;
@@ -427,8 +438,14 @@
     color:variables.$color-primary;
   }
 }
-
-    .yellow{
-background-color:  #f9e904;
-
+.navbar-toggler{
+  width: 100vw;
+ 
+  } 
+  .form_wrapper{
+    margin-bottom: 20px;
+    h2{
+      color: #f9e904;
     }
+    label{color: #f9e904;}
+  }
